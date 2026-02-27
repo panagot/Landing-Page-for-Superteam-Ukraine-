@@ -2,7 +2,7 @@
 
 Landing page for **Superteam Ukraine** (ex Kumeka Team), the #1 Solana Web3 hub in Ukraine.
 
-Use this project as you like. Feel free to drop in your own videos, photos, and assets — replace the placeholders with real event shots, team pics, or whatever fits your community.
+Use this project as you like. Feel free to drop in your own videos, photos, and assets. Replace the placeholders with real event shots, team pics, or whatever fits your community.
 
 ## Quick start
 
