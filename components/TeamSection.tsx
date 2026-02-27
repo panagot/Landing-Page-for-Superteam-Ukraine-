@@ -1,7 +1,5 @@
 'use client';
 
-import { WheatIcon } from './WheatIcon';
-
 const members = [
   { id: '1', name: 'Core team', role: 'Community & ecosystem' },
   { id: '2', name: 'Builders', role: 'Mentors & leads' },
@@ -29,8 +27,8 @@ export function TeamSection() {
               key={m.id}
               className="rounded-xl border border-border/50 bg-surface-elevated p-6 transition hover:border-accent/30 hover:shadow-card"
             >
-              <div className="flex h-16 w-16 items-center justify-center rounded-full border border-border/50 bg-[rgb(var(--surface-muted))] text-accent">
-                <WheatIcon className="h-7 w-7 opacity-90" />
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[rgb(var(--surface-muted))] text-2xl text-[rgb(var(--text-subtle))]">
+                ?
               </div>
               <h3 className="mt-4 text-title font-semibold text-[rgb(var(--text))]">{m.name}</h3>
               <p className="mt-1 text-caption text-[rgb(var(--text-muted))]">{m.role}</p>
