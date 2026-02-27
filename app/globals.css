@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Superteam Ukraine — Dark mode primary (bounty requirement) */
+:root,
+[data-theme="dark"] {
+  --bg: 15 18 28;
+  --bg-page: 10 12 20;
+  --surface: 22 26 40;
+  --surface-elevated: 32 38 56;
+  --surface-muted: 28 32 48;
+  --border: 50 56 80;
+  --border-muted: 38 44 64;
+  --text: 248 250 252;
+  --text-muted: 180 190 220;
+  --text-subtle: 120 135 175;
+  --accent: 250 204 21;       /* gold/wheat — Ukrainian symbol */
+  --accent-hover: 253 224 71;
+  --accent-muted: 234 179 8;
+  --wheat: 250 204 21;        /* wheat accent for decorative use */
+  /* Ukraine flag (blue sky, yellow wheat) — official #0057B7, #FFDD00 */
+  --ukraine-blue: 0 87 183;
+  --ukraine-yellow: 255 221 0;
+  /* Superteam brand (purple–yellow gradient energy) */
+  --superteam-purple: 81 45 168;
+  --superteam-yellow: 255 235 59;
+  /* Solana brand (solana.com/branding): use for ecosystem cues only */
+  --solana-purple: 153 69 255;
+  --solana-green: 20 241 149;
+}
+
+/* Light theme (optional) */
+[data-theme="light"] {
+  --bg: 248 250 252;
+  --bg-page: 241 245 249;
+  --surface: 255 255 255;
+  --surface-elevated: 248 250 252;
+  --surface-muted: 241 245 249;
+  --border: 226 232 240;
+  --border-muted: 241 245 249;
+  --text: 15 23 42;
+  --text-muted: 51 65 85;
+  --text-subtle: 100 116 139;
+  --accent: 234 179 8;
+  --accent-hover: 202 138 4;
+  --accent-muted: 250 204 21;
+  --wheat: 234 179 8;
+  --ukraine-blue: 0 87 183;
+  --ukraine-yellow: 255 221 0;
+  --superteam-purple: 81 45 168;
+  --superteam-yellow: 255 235 59;
+  --solana-purple: 153 69 255;
+  --solana-green: 20 241 149;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  body {
+    background: rgb(var(--bg-page));
+    color: rgb(var(--text));
+  }
+  :focus-visible {
+    outline: 2px solid rgb(var(--accent));
+    outline-offset: 2px;
+  }
+}
+
+/* Animations — respect reduced motion */
+@layer utilities {
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(0.75rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out forwards;
+  }
+  .animate-delay-1 { animation-delay: 0.1s; }
+  .animate-delay-2 { animation-delay: 0.2s; }
+  .animate-delay-3 { animation-delay: 0.3s; }
+  .animate-delay-4 { animation-delay: 0.4s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in, .animate-fade-in-up { animation: none; opacity: 1; }
+}
+
+/* Wheat pattern — low-opacity repeating motif for hero/mission */
+.wheat-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 4v32M14 10c4 4 8 4 8 12s-4 8-8 12M26 10c-4 4-8 4-8 12s4 8 8 12M10 18h20M8 24h24M6 30h28' stroke='%23FACC15' stroke-width='0.5' fill='none' opacity='0.06'/%3E%3C/svg%3E");
+}
