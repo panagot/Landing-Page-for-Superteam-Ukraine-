@@ -66,12 +66,8 @@ export function HeroSection() {
           aria-hidden
         >
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-[rgb(var(--surface)/0.85)] text-[rgb(var(--text))]">
-            <div className="flex gap-3">
-              <WheatIcon className="h-10 w-10 text-accent/60" />
-              <WheatIcon className="h-10 w-10 text-accent/40" />
-              <WheatIcon className="h-10 w-10 text-accent/30" />
-            </div>
-            <span className="text-caption text-[rgb(var(--text-muted))]">Community · Solana · Ukraine</span>
+            <p className="text-caption font-medium text-[rgb(var(--text-muted))]">Slider or video goes here</p>
+            <span className="text-caption text-[rgb(var(--text-subtle))]">Community · Solana · Ukraine</span>
             <p className="text-body font-medium">Real-life events in Kyiv, Lviv & online</p>
             <a
               href="https://t.me/superteamukr"

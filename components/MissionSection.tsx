@@ -31,7 +31,9 @@ export function MissionSection() {
             </p>
           </div>
         </div>
-        <div className="mt-10 aspect-[2/1] max-w-4xl overflow-hidden rounded-xl border border-border/50 bg-gradient-to-br from-[rgb(var(--surface))] to-[rgb(var(--surface-muted))]" aria-hidden />
+        <div className="mt-10 flex aspect-[2/1] max-w-4xl items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-gradient-to-br from-[rgb(var(--surface))] to-[rgb(var(--surface-muted))]">
+          <p className="text-caption font-medium text-[rgb(var(--text-subtle))]">Photo, video or slider goes here</p>
+        </div>
       </div>
     </section>
   );
