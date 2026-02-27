@@ -28,7 +28,7 @@ export function HeroSection() {
         <WheatIcon className="h-20 w-20 text-accent" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+      <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
         <div className="max-w-2xl">
           <p className="animate-fade-in text-caption font-medium uppercase tracking-widest text-accent">
             ex Kumeka Team
@@ -39,7 +39,7 @@ export function HeroSection() {
           >
             Superteam Ukraine: Empowering Solana Builders in Ukraine
           </h1>
-          <p className="animate-fade-in-up animate-delay-2 mt-4 text-body text-[rgb(var(--text-muted))]">
+          <p className="animate-fade-in-up animate-delay-2 mt-4 text-body leading-relaxed text-[rgb(var(--text-muted))]">
             The heartbeat of Ukraine&apos;s Solana community. Grants, bootcamps, hackathons — and a real place to learn, earn, and build.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 animate-fade-in-up animate-delay-3">
@@ -47,7 +47,7 @@ export function HeroSection() {
               href="https://t.me/superteamukr"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-[44px] min-w-[44px] items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-[rgb(10_12_20)] shadow-[0_0_20px_rgb(var(--accent)/0.3)] transition hover:bg-accent-hover hover:shadow-[0_0_24px_rgb(var(--accent)/0.4)] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[rgb(var(--bg-page))]"
+              className="inline-flex min-h-[44px] min-w-[44px] items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-[rgb(10_12_20)] shadow-[0_0_20px_rgb(var(--accent)/0.3)] transition hover:scale-[1.02] hover:bg-accent-hover hover:shadow-[0_0_24px_rgb(var(--accent)/0.4)] active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[rgb(var(--bg-page))]"
             >
               Join the Community
             </a>

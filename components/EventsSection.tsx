@@ -10,7 +10,7 @@ export function EventsSection() {
   return (
     <section
       id="events"
-      className="border-b border-border/50 bg-[rgb(var(--bg-page))] py-16 sm:py-20"
+      className="border-b border-border/50 bg-[rgb(var(--bg-page))] py-20 sm:py-24"
       aria-labelledby="events-title"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -18,8 +18,11 @@ export function EventsSection() {
         <h2 id="events-title" className="font-display mt-1 text-display font-semibold text-[rgb(var(--text))]">
           Events
         </h2>
-        <p className="mt-4 max-w-2xl text-body text-[rgb(var(--text-muted))]">
-          Bootcamps, hackathons, and meetups — online and across Ukraine. Follow us for dates and locations.
+        <p className="mt-4 max-w-2xl text-body leading-relaxed text-[rgb(var(--text-muted))]">
+          Bootcamps, hackathons, and meetups — online and across Ukraine.
+        </p>
+        <p className="mt-2 text-caption text-[rgb(var(--text-muted))]">
+          Follow <a href="https://t.me/superteamukr" target="_blank" rel="noopener noreferrer" className="font-medium text-accent hover:underline">Telegram</a> and <a href="https://x.com/SuperteamUKR" target="_blank" rel="noopener noreferrer" className="font-medium text-accent hover:underline">X</a> for dates and locations.
         </p>
         <div className="mt-10 flex gap-6 overflow-x-auto pb-2 sm:grid sm:grid-cols-3 sm:overflow-visible">
           {events.map((event) => (

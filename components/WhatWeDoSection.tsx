@@ -48,13 +48,13 @@ const items = [
 
 export function WhatWeDoSection() {
   return (
-    <section id="what-we-do" className="border-b border-border/50 bg-[rgb(var(--surface))] py-16 sm:py-20" aria-labelledby="what-we-do-title">
+    <section id="what-we-do" className="border-b border-border/50 bg-[rgb(var(--surface))] py-20 sm:py-24" aria-labelledby="what-we-do-title">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <p className="text-caption font-medium uppercase tracking-widest text-accent">Learn · Earn · Build</p>
         <h2 id="what-we-do-title" className="font-display mt-1 text-display font-semibold text-[rgb(var(--text))]">
           What we do
         </h2>
-        <p className="mt-3 text-body text-[rgb(var(--text-muted))]">
+        <p className="mt-3 text-body leading-relaxed text-[rgb(var(--text-muted))]">
           Three ways to get in: learn Solana, earn from grants and bounties, or build with the community.
         </p>
         <div className="mt-10 grid gap-6 sm:grid-cols-3">
@@ -66,8 +66,11 @@ export function WhatWeDoSection() {
                 className="group rounded-xl border border-border/50 bg-surface-elevated p-6 transition hover:border-accent/40 hover:shadow-card-hover"
               >
                 <Icon />
-                <h3 className="mt-4 text-title font-semibold text-accent">{item.title}</h3>
-                <p className="mt-2 text-caption text-[rgb(var(--text-muted))]">{item.description}</p>
+                <h3 className="mt-3 text-title font-semibold text-accent">{item.title}</h3>
+                <div className="mt-3 aspect-[4/3] w-full overflow-hidden rounded-lg border border-border/40 bg-[rgb(var(--surface-muted))] flex items-center justify-center text-[rgb(var(--text-subtle))] text-caption">
+                  Add photo
+                </div>
+                <p className="mt-2 text-caption leading-snug text-[rgb(var(--text-muted))]">{item.description}</p>
                 <a
                   href={item.href}
                   {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}

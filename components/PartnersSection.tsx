@@ -10,7 +10,7 @@ export function PartnersSection() {
   return (
     <section
       id="partners"
-      className="relative border-b border-border/50 bg-[rgb(var(--surface))] py-16 sm:py-20"
+      className="relative border-b border-border/50 bg-[rgb(var(--surface))] py-20 sm:py-24"
       aria-labelledby="partners-title"
     >
       {/* Solana gradient (ecosystem); Ukraine blue accent */}

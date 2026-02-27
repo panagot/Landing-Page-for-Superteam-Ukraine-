@@ -28,14 +28,14 @@ export function GetInvolvedSection() {
   return (
     <section
       id="get-involved"
-      className="border-b border-border/50 bg-[rgb(var(--bg-page))] py-16 sm:py-20"
+      className="border-b border-border/50 bg-[rgb(var(--bg-page))] py-20 sm:py-24"
       aria-labelledby="get-involved-title"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 id="get-involved-title" className="font-display text-display font-semibold text-[rgb(var(--text))]">
           Get involved
         </h2>
-        <p className="mt-4 max-w-2xl text-body text-[rgb(var(--text-muted))]">
+        <p className="mt-4 max-w-2xl text-body leading-relaxed text-[rgb(var(--text-muted))]">
           Join Telegram for updates and events. Have a project? We’ll help you apply for grants. Just want to show up? We run meetups and bootcamps online and across Ukraine.
         </p>
         <div className="mt-10 grid gap-6 sm:grid-cols-3">

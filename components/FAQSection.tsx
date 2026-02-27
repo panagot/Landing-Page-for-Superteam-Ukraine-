@@ -31,14 +31,14 @@ export function FAQSection() {
   return (
     <section
       id="faq"
-      className="border-b border-border/50 bg-[rgb(var(--bg-page))] py-16 sm:py-20"
+      className="border-b border-border/50 bg-[rgb(var(--bg-page))] py-20 sm:py-24"
       aria-labelledby="faq-title"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 id="faq-title" className="font-display text-display font-semibold text-[rgb(var(--text))]">
           FAQ
         </h2>
-        <p className="mt-4 max-w-2xl text-body text-[rgb(var(--text-muted))]">
+        <p className="mt-4 max-w-2xl text-body leading-relaxed text-[rgb(var(--text-muted))]">
           Frequently asked questions about Superteam Ukraine and how to get involved.
         </p>
         <dl className="mt-10 space-y-3">

@@ -9,16 +9,16 @@ const metrics = [
 
 export function MetricsSection() {
   return (
-    <section className="border-b border-border/50 bg-[rgb(var(--bg-page))] py-16 sm:py-20" aria-labelledby="metrics-title">
+    <section className="border-b border-border/50 bg-[rgb(var(--bg-page))] py-20 sm:py-24" aria-labelledby="metrics-title">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 id="metrics-title" className="font-display text-display font-semibold text-[rgb(var(--text))]">
           By the numbers
         </h2>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {metrics.map((m) => (
-            <div key={m.id} className="rounded-xl border border-border/50 bg-surface p-6 text-center">
-              <p className="text-2xl font-bold text-accent sm:text-3xl">{m.value}</p>
-              <p className="mt-1 text-caption text-[rgb(var(--text-muted))]">{m.label}</p>
+            <div key={m.id} className="rounded-xl border border-border/50 border-l-4 border-l-accent bg-surface p-6 text-center">
+              <p className="font-display text-3xl font-bold text-accent sm:text-4xl">{m.value}</p>
+              <p className="mt-2 text-caption leading-snug text-[rgb(var(--text-muted))]">{m.label}</p>
             </div>
           ))}
         </div>
