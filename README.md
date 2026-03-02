@@ -26,6 +26,14 @@ npm start
 - TypeScript
 - Tailwind CSS
 
+## Figma
+
+Design and style guide for handoff:
+
+- **[Figma — Style Guide & design](https://www.figma.com/make/rqvErtt6N99WB014w431Y0/Create-Style-Guide-Page)** — Colors, typography, spacing, components. Use for design reference or developer handoff.
+
+The `Figma/` folder in this repo contains the same specs in markdown (style guide, components, page structure) for building or extending the Figma file.
+
 ---
 
 Superteam Ukraine · ex Kumeka Team · [Telegram](https://t.me/superteamukr) · [X](https://x.com/SuperteamUKR)
