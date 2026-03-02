@@ -1,5 +1,7 @@
 'use client';
 
+import { RevealOnScroll } from './RevealOnScroll';
+
 const metrics = [
   { id: 'hackathon', value: '300+', label: 'projects submitted to Solana hackathon' },
   { id: 'funded', value: '100+', label: 'projects received prizes, grants, and seed funding' },
@@ -10,7 +12,7 @@ const metrics = [
 export function MetricsSection() {
   return (
     <section className="border-b border-border/50 bg-[rgb(var(--bg-page))] py-20 sm:py-24" aria-labelledby="metrics-title">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <RevealOnScroll className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 id="metrics-title" className="font-display text-display font-semibold text-[rgb(var(--text))]">
           By the numbers
         </h2>
@@ -22,7 +24,7 @@ export function MetricsSection() {
             </div>
           ))}
         </div>
-      </div>
+      </RevealOnScroll>
     </section>
   );
 }

@@ -102,6 +102,34 @@
   .animate-fade-in, .animate-fade-in-up { animation: none; opacity: 1; }
 }
 
+/* Scroll-triggered reveal — subtle fade-in when section enters viewport */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll,
+  .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Hide scrollbar on carousel (keep functionality) */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Wheat pattern — low-opacity repeating motif for hero/mission */
 .wheat-pattern {
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 4v32M14 10c4 4 8 4 8 12s-4 8-8 12M26 10c-4 4-8 4-8 12s4 8 8 12M10 18h20M8 24h24M6 30h28' stroke='%23FACC15' stroke-width='0.5' fill='none' opacity='0.06'/%3E%3C/svg%3E");

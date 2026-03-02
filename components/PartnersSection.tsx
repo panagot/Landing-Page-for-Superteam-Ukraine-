@@ -1,5 +1,7 @@
 'use client';
 
+import { RevealOnScroll } from './RevealOnScroll';
+
 const partners = [
   { name: 'Solana Foundation', href: 'https://solana.com/foundation', description: 'Ecosystem grants and support' },
   { name: 'Superteam', href: 'https://superteam.fun', description: 'Global Solana community' },
@@ -18,7 +20,7 @@ export function PartnersSection() {
         className="pointer-events-none absolute left-0 right-0 top-0 h-0.5 bg-gradient-to-r from-ukraine-blue/80 via-[rgb(var(--solana-purple)/0.5)] to-[rgb(var(--solana-green)/0.5)]"
         aria-hidden
       />
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <RevealOnScroll className="mx-auto max-w-6xl px-4 sm:px-6">
         <p className="text-caption font-medium uppercase tracking-widest text-[rgb(var(--text-subtle))]">
           Built on Solana
         </p>
@@ -42,7 +44,7 @@ export function PartnersSection() {
             </a>
           ))}
         </div>
-      </div>
+      </RevealOnScroll>
     </section>
   );
 }

@@ -1,12 +1,13 @@
 'use client';
 
 import { WheatIcon } from './WheatIcon';
+import { RevealOnScroll } from './RevealOnScroll';
 
 export function MissionSection() {
   return (
     <section id="mission" className="relative border-b border-border/50 bg-[rgb(var(--bg-page))] py-20 sm:py-24" aria-labelledby="mission-title">
       <div className="pointer-events-none absolute left-0 right-0 top-0 h-0.5 bg-gradient-to-r from-superteam-purple/60 via-accent/50 to-ukraine-yellow/60" aria-hidden />
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <RevealOnScroll className="mx-auto max-w-6xl px-4 sm:px-6">
         <p className="flex items-center gap-2 text-caption font-medium uppercase tracking-widest text-accent">
           <WheatIcon className="h-4 w-4 opacity-80" aria-hidden />
           What we stand for
@@ -34,7 +35,7 @@ export function MissionSection() {
         <div className="mt-10 flex aspect-[2/1] max-w-4xl items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-gradient-to-br from-[rgb(var(--surface))] to-[rgb(var(--surface-muted))]">
           <p className="text-caption font-medium text-[rgb(var(--text-subtle))]">Photo, video or slider goes here</p>
         </div>
-      </div>
+      </RevealOnScroll>
     </section>
   );
 }

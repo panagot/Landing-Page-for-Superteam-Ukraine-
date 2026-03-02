@@ -1,5 +1,7 @@
 'use client';
 
+import { RevealOnScroll } from './RevealOnScroll';
+
 const members = [
   { id: '1', name: 'Core team', role: 'Community & ecosystem' },
   { id: '2', name: 'Builders', role: 'Mentors & leads' },
@@ -13,7 +15,7 @@ export function TeamSection() {
       className="border-b border-border/50 bg-[rgb(var(--surface))] py-20 sm:py-24"
       aria-labelledby="team-title"
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <RevealOnScroll className="mx-auto max-w-6xl px-4 sm:px-6">
         <p className="text-caption font-medium uppercase tracking-widest text-accent">Who we are</p>
         <h2 id="team-title" className="font-display mt-1 text-display font-semibold text-[rgb(var(--text))]">
           Team
@@ -35,7 +37,7 @@ export function TeamSection() {
             </div>
           ))}
         </div>
-      </div>
+      </RevealOnScroll>
     </section>
   );
 }

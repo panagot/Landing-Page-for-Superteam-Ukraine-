@@ -1,5 +1,7 @@
 'use client';
 
+import { RevealOnScroll } from './RevealOnScroll';
+
 const actions = [
   {
     title: 'Join the community',
@@ -31,7 +33,7 @@ export function GetInvolvedSection() {
       className="border-b border-border/50 bg-[rgb(var(--bg-page))] py-20 sm:py-24"
       aria-labelledby="get-involved-title"
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <RevealOnScroll className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 id="get-involved-title" className="font-display text-display font-semibold text-[rgb(var(--text))]">
           Get involved
         </h2>
@@ -59,7 +61,7 @@ export function GetInvolvedSection() {
             </div>
           ))}
         </div>
-      </div>
+      </RevealOnScroll>
     </section>
   );
 }
